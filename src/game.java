@@ -12,7 +12,7 @@ public class game {
         int i, guess;
 
         for (i = 1; i < K; i++) {
-            System.out.println("Guess the number:");
+            System.out.println("Take a guess");
 //            System.out.println("Random number: " + number);
             guess = sc.nextInt();
 
@@ -21,7 +21,8 @@ public class game {
                 System.out.println(
                         "Congratulations!\n " +
                                 "You beat the game in "+ i + " guesses!"
-                        );
+                );
+                playAgain(name);
                 break;
             }
             else if (number > guess
