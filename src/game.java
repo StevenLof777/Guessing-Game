@@ -9,13 +9,18 @@ public class game {
         // K = Guesses
         int K = 7;
 
-        int i, guess;
+        int i, guess = 0;
 
         for (i = 1; i < K; i++) {
             System.out.println("Take a guess");
 //            System.out.println("Random number: " + number);
-            guess = sc.nextInt();
-
+            
+            try {
+                guess = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            
             // If the number is guessed correctly
             if (number == guess) {
                 System.out.println(
