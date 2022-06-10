@@ -1,6 +1,8 @@
 // Java program for the above approach
 import java.util.Scanner;
 public class game {
+
+
     public static void guessNumber(String name) {
         Scanner sc = new Scanner(System.in);
 
@@ -20,7 +22,7 @@ public class game {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-            
+
             // If the number is guessed correctly
             if (number == guess) {
                 System.out.println(
